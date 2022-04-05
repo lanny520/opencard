@@ -28,11 +28,11 @@ All变量适用
 请求太频繁会被黑ip
 过10分钟再执行
 
-cron:30 1 3-9/3 4 *
+cron:30 12 12 12 *
 ============Quantumultx===============
 [task_local]
 #4.3~4.9 我的新家 超级配
-30 1 3-9/3 4 * https://raw.githubusercontent.com/smiek2121/scripts/master/gua_opencard126.js, tag=4.3~4.9 我的新家 超级配, enabled=true
+30 12 12 12 * https://raw.githubusercontent.com/smiek2121/scripts/master/gua_opencard126.js, tag=4.3~4.9 我的新家 超级配, enabled=true
 
 */
 let guaopencard_addSku = "false"
