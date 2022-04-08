@@ -100,7 +100,7 @@ let activityCookie =''
     return;
   }
   $.activityId = "dz40c5c3a14fd59a0c47466d63f0c7"
-  $.shareUuid = ""
+  $.shareUuid = "63fab1e69b214e28aced0b615559cc57"
   console.log(`入口:\nhttps://lzdz1-isv.isvjcloud.com/dingzhi/april/springUnion2/activity?activityId=${$.activityId}&shareUuid=${$.shareUuid}`)
   let shareUuidArr = [$.shareUuid,""]
   let s = Math.floor((Math.random()*10))
