@@ -152,7 +152,7 @@ async function run() {
           flag = true
           $.joinVenderId = o.venderId
           $.errorJoinShop = ''
-          for (let i = 0; i < Array(5).length; i++) {
+          for (let i = 0; i < Array(10).length; i++) {
             if (i > 0) console.log(`第${i}次 重新开卡`)
             await joinShop()
             if ($.errorJoinShop.indexOf('活动太火爆，请稍后再试') == -1) break
