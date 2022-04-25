@@ -1,5 +1,5 @@
 /*
-家装cron "12 12 12 12 1"
+cron:12 12 12 12 *
 */
 let guaopencard_addSku = "false"
 let guaopencard = "false"
