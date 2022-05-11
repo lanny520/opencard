@@ -44,7 +44,7 @@ let guaopencard = "true"
 let guaopenwait = "0"
 let guaopencard_draw = "2"
 
-const $ = new Env('1.8～1.15 联合开卡-99');
+const $ = new Env('联合开卡');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
 let cleanCart = ''
