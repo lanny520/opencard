@@ -186,7 +186,7 @@ async function run(type = 0){
               if($.shareCode) console.log(`助力[${i}]`)
               let res = await getCoupons($.shareCode,1)
               if(res.indexOf('上限') > -1){
-                await $.wait(parseInt(Math.random() * 5000 + 3000, 10))
+                await $.wait(parseInt(Math.random() * 2000 + 300, 10))
                 await getCoupons('',1)
               }
             }
@@ -195,7 +195,7 @@ async function run(type = 0){
         }else{
           let res = await getCoupons('',1)
           if(res.indexOf('上限') > -1){
-            await $.wait(parseInt(Math.random() * 5000 + 3000, 10))
+            await $.wait(parseInt(Math.random() * 2000 + 300, 10))
             await getCoupons('',1)
           }
         }
@@ -211,14 +211,14 @@ async function run(type = 0){
       }
       s++
       if($.flag == 1){
-        await $.wait(parseInt(Math.random() * 5000 + 3000, 10))
+        await $.wait(parseInt(Math.random() * 2000 + 300, 10))
       }
     }while ($.flag == 1 && s < 5)
     if($.endFlag) return
     if(resMsg){
       message += `【京东账号${$.index}】${$.nickName || $.UserName}\n${resMsg}`
     }
-    await $.wait(parseInt(Math.random() * 2000 + 2000, 10))
+    await $.wait(parseInt(Math.random() * 2000 + 200, 10))
   }catch(e){
     console.log(e)
   }
@@ -290,7 +290,7 @@ function getCoupons(shareId = '',type = 1) {
               for(let i of res.data.groupInfo || []){
                 if(i.status == 2){
                   console.log(`助力满可以领取${i.info}元红包🧧`)
-                  await $.wait(parseInt(Math.random() * 2000 + 2000, 10))
+                  await $.wait(parseInt(Math.random() * 2000 + 200, 10))
                   await getCoupons('',2)
                 }
               }
